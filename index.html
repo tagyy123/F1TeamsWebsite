@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Teams</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>F1 Teams</h1>
+</header>
+
+<nav>
+    <a href="#teams">Teams</a>
+    <a href="#about">About F1</a>
+</nav>
+
+<div class="container" id="teams">
+    <h2>Teams</h2>
+    <div class="team-list">
+        <div class="team" onclick="openModal('Mercedes')">
+            <h3>Mercedes</h3>
+            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/2018-redesign-assets/team%20logos/mercedes" alt="Mercedes Logo">
+            <p>7-time Constructors' Champion</p>
+            <div class="social-media">
+                <a href="https://twitter.com/MercedesAMGF1" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/mercedesamgf1/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="team" onclick="openModal('Ferrari')">
+            <h3>Ferrari</h3>
+            <img src="https://logos-world.net/wp-content/uploads/2020/07/Ferrari-Scuderia-Logo.png" alt="Ferrari Logo">
+            <p>Most Successful Team in F1 History</p>
+            <div class="social-media">
+                <a href="https://twitter.com/ScuderiaFerrari" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/scuderiaferrari/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="team" onclick="openModal('Red Bull Racing')">
+            <h3>Red Bull Racing</h3>
+            <img src="https://cdn-4.motorsport.com/images/mgl/Y99JQRbY/s8/red-bull-racing-logo-1.jpg" alt="Red Bull Racing Logo">
+            <p>Dominant Force in Recent Years</p>
+            <div class="social-media">
+                <a href="https://twitter.com/redbullracing" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/redbullracing/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="team" onclick="openModal('McLaren')">
+            <h3>McLaren</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/McLaren_Racing_logo.svg/2560px-McLaren_Racing_logo.svg.png" alt="McLaren Logo">
+            <p>Iconic Team with a Rich History</p>
+            <div class="social-media">
+                <a href="https://twitter.com/McLarenF1" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/mclarenf1/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title">Team Name</h2>
+        <p id="modal-description">Description of the team will go here.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 F1 Teams. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
